@@ -1,0 +1,29 @@
+{
+  "name": "claude-series",
+  "version": "0.1.0",
+  "description": "Claude 實戰 — 真人錄影 + Remotion 後製疊層的課程系列",
+  "scripts": {
+    "start": "remotion studio",
+    "studio": "remotion studio",
+    "build:claude-chat-website": "remotion render claude-chat-website out/claude-chat-website/Claude實戰-用Claude做質感網頁-$(date +%F).mp4 --codec h264",
+    "build:claude-chat-website-sample": "remotion render claude-chat-website-sample out/claude-chat-website/sample.mp4 --codec h264",
+    "build:meeting-notes-organizer": "remotion render meeting-notes-organizer out/meeting-notes-organizer/Claude實戰-用Claude整理會議紀錄-$(date +%F).mp4 --codec h264",
+    "build:reply-template-library": "remotion render reply-template-library out/reply-template-library/Claude實戰-用Claude做回信模板庫-$(date +%F).mp4 --codec h264",
+    "build:community-calendar": "remotion render community-calendar out/community-calendar/Claude實戰-用Claude規劃社群行事曆-$(date +%F).mp4 --codec h264",
+    "build:pdf-summary-analysis": "remotion render pdf-summary-analysis \"out/pdf-summary-analysis/Claude實戰-用Claude Chat讀懂任何PDF-$(date +%F).mp4\" --codec h264",
+    "build:claude-projects-workspace": "remotion render claude-projects-workspace \"out/claude-projects-workspace/Claude實戰-Claude Projects 個人記憶空間-$(date +%F).mp4\" --codec h264",
+    "build:think-clearly": "remotion render think-clearly \"out/think-clearly/Claude實戰-Claude思考夥伴-分析決策突破盲點-$(date +%F).mp4\" --codec h264"
+  },
+  "type": "commonjs",
+  "dependencies": {
+    "@remotion/cli": "^4.0.438",
+    "@remotion/google-fonts": "^4.0.438",
+    "@remotion/media-utils": "^4.0.438",
+    "@types/react": "^19.2.14",
+    "@types/react-dom": "^19.2.3",
+    "react": "^19.2.4",
+    "react-dom": "^19.2.4",
+    "remotion": "^4.0.438",
+    "typescript": "^6.0.2"
+  }
+}

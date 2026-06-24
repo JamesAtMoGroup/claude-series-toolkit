@@ -1,0 +1,17 @@
+# 不上 git 的東西
+.DS_Store
+*.bak
+*.bak-*
+
+# Remotion 跑出來的（同事自己 render）— 全部不上 git
+remotion/node_modules/
+remotion/inbox/
+remotion/public/
+remotion/out/
+remotion/processed/
+remotion/whisper-out/
+
+# 任何 .env 真正內容（同事自己填、別 commit）
+.env
+*.env
+!.env.example
