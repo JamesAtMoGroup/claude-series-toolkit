@@ -95,7 +95,7 @@ if [ -f "$ENV_DST" ]; then
 else
   cp "$TOOLKIT/.env.example" "$ENV_DST"
   chmod 600 "$ENV_DST"
-  green "✅ 範本已放 $ENV_DST（chmod 600）"
+  green "✅ 範本已放 ${ENV_DST}（chmod 600）"
 fi
 echo ""
 
@@ -104,7 +104,7 @@ cyan "═══ 安裝完成 ═══"
 echo ""
 echo "📝 接下來你要做："
 echo ""
-echo "  1️⃣  編輯 $ENV_DST，填上："
+echo "  1️⃣  編輯 ${ENV_DST}，填上："
 echo "      • BOT_UPLOAD_TOKEN  ← 向 James 拿 machine_token"
 echo "      • 確認 BOT_UPLOAD_URL / DRIVE_FOLDER_ID"
 echo ""
